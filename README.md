@@ -1,1 +1,1 @@
-https://anddemyan.github.io/rsschool-cv/cv.md
+https://anddemyan.github.io/rsschool-cv/cv

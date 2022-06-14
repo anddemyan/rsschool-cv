@@ -4,8 +4,91 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+  <link rel="icon" href="./images/favicon.ico">
+  <title>Andrey Demyanov CV</title>
 </head>
 <body>
-</body>
-</html>
+  <nav class="nav">
+    <ul class="navigation">
+      <li><a href="#contacts">Contacts</a></li>
+      <li><a href="#Summary">Summary</a></li>
+      <li><a href="#Code">Code</a></li>
+      <li><a href="#Courses">Courses</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#Education">Education</a></li>
+      <li><a href="#English">English</a></li>
+     </ul> 
+  </nav>
+  <header class="profile">
+      <img src="./images/Photo.jpg" alt="photo" class="photo">
+      <div class="profile__bio">
+        <h1 class="profile__name">Andrey Demyanov</h1>
+        <p class="profile__description">RSSchool student</p>
+      </div>
+  </header>
+  <main class="main">
+    <div class="contacts">
+      <h2 id="contacts">Contacts</h2>
+      <ul>
+        <li>Izhevsk, Russia</li>
+        <li>Email: <a href="mailto:anddemyan@gmail.com">anddemyan@gmail.com</a></li>
+        <li>GitHub: <a href="https://github.com/anddemyan/">anddemyan</a></li>
+        <li>Telegram: <a href="https://t.me/HaZeRU">@HaZeRU</a></li>
+        <li>Discord: d3mand#3473</li>
+      </ul>
+    </div>
+    <div>
+      <h2 id="Summary">Summary</h2>
+      <p>My goal is to learn frontend development. Previously worked as a system administrator</p>
+    </div>
+    <div>
+      <h2 id="Code">Code</h2>
+      <code>createCard () {
+        this._element = this._getTemplate();
+        this._cardImage = this._element.querySelector('.elements__image');
+        const cardTitle = this._element.querySelector('.elements__title');
+        this._deleteButton = this._element.querySelector('.elements__delete-button');
+        this._cardItem = this._element.querySelector('.elements__item')
+        this._likeButton = this._element.querySelector('.elements__like-button');
+        cardTitle.textContent = this._data.name;
+        this._cardImage.alt = this._data.name;
+        this._cardImage.src = this._data.link;
+    
+        this._setEventListeners()
+        return this._element;
+      }</code>
+    </div>
+    <div>
+     <h2 id="Courses">Courses</h2>
+     <p>Yandex Practicum: <a href="https://practicum.yandex.ru/web/">Web Developer</a></p>
+    </div>
+    <div>
+      <h2 id="Projects">Projects</h2>
+      <ul>
+      <li><a href="https://anddemyan.github.io/mesto/">Russia Mesto</a></li>
+      <li><a href="https://anddemyan.github.io/russian-travel/">Russian Travel</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 id="Education">Education</h2>
+      <p>Udmurt State University</p>
+    </div>
+    <div>
+      <h2 id="English">English</h2>
+      <p>B1 - Pre-Intermediate</p>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-left">
+      <p class="copyright">&copy; 2022</p>
+      GitHub: <a href="https://github.com/anddemyan/">anddemyan</a>
+    </div>
+    <div class="logo">
+      <a href="https://rs.school/js/"><img src="./images/rs_school_js.svg" alt="RSSchool logo"></a>
+    </div>
+  </footer>
